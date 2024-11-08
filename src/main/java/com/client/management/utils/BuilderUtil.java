@@ -6,6 +6,7 @@ import com.client.management.models.Client;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+import static com.client.management.utils.MethodUtil.getCurrentTimeStamp;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -32,10 +33,6 @@ public final class BuilderUtil {
                 .clientId(client.getId())
                 .fullName(getFullName(client))
                 .build();
-    }
-
-    public static Long getCurrentTimeStamp() {
-        return System.currentTimeMillis();
     }
 
     private static String getFullName(final Client client) {

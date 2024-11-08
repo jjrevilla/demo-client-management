@@ -27,6 +27,9 @@ public final class Constants {
     public static final String DEVICE_ID_INVALID_MESSAGE = "Device Id value is mandatory.";
     public static final String CONTAINER_CLIENT_NAME = "ClientData";
     public static final String CONTAINER_UNIQUE_KEY_PATH = "/documentNumber";
+    public static final String APPLICATION = "application-";
+    public static final String KAFKA_SEND_MESSAGE = "Sending message to Kafka: {} {} {}";
+    public static final String KAFKA_SUCCESS_MESSAGE = "Successfully message sent to Kafka: {} {}";
 
     public static final String INTERNAL_ERROR_CODE = "E001";
     public static final String INTERNAL_ERROR_MESSAGE = "An unexpected error occurred.";
